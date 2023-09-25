@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.progress {
+    width: 200px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    -webkit-mask: linear-gradient(90deg, #FF5733 70%, #0000 0) 0/20%;
+    background: linear-gradient(#33ffa7 0 0) 0/0% no-repeat #ddd;
+    animation: p4 3s infinite steps(10); /* Adjust the animation duration as needed */
+}
+
+@keyframes p4 {
+    100% {
+        background-size: 120%;
+    }
+}   
